@@ -4,6 +4,8 @@ A proof of concept for using Rust to create an iOS static library.
 
 Requires Xcode 5 and the iOS 7 SDK.
 
+Based on [doublec/rust-from-c-example](https://github.com/doublec/rust-from-c-example)
+
 
 ## Status
 
@@ -14,11 +16,16 @@ What works:
 - iOS project builds and runs on simulator and devices.
 
 What doesn't work:
+- Compiles without standard library (maybe try with rust-core?)
 - Functions that accept or return structs with float members cause a crash.
+- Probably almost everything else...
 
 
 ## Usage
 
-1. Clone the repository using`git clone https://github.com/shilgapira/objcrust.git`
-2. Build Rust code by running `make` in the `./Rust` directory
-3. Run the Xcode project in the `./iOS` directory
+1. `git clone https://github.com/shilgapira/ObjCrust.git`
+2. `cd ObjCrust/Rust`
+3. `make`
+4. `cd ../iOS`
+5. `open ObjCrust.xcodeproj`
+6. Build and run in Xcode
