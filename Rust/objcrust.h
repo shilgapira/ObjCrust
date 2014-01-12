@@ -38,4 +38,4 @@ extern Complex get_complex();
 
 extern Complex inc_complex(Complex complex);
 
-extern Complex inc_complex_ptr(Complex *complex);
+extern void inc_complex_ptr(Complex *complex);

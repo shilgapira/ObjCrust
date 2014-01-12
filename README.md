@@ -10,15 +10,16 @@ Based on [doublec/rust-from-c-example](https://github.com/doublec/rust-from-c-ex
 ## Status
 
 What works:
+
 - Rust code exposes simple functions for working with integers and floats, using values, pointers and structs.
 - Make file creates architecture-specific libraries for the simulator (`i386`) and devices (`armv7` and `armv7s`).
 - Creates universal static library for linking in iOS binary.
 - iOS project builds and runs on simulator and devices.
 
 What doesn't work:
+
 - Compiles without standard library (maybe try with rust-core?)
-- Functions that accept or return structs with float members cause a crash.
-- Probably almost everything else...
+- When running on Simulator: Functions that return structs with float members cause a crash (maybe related to [issue #5744](https://github.com/mozilla/rust/issues/5744)?)
 
 
 ## Usage

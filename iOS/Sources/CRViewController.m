@@ -78,27 +78,24 @@
         }
             
         case 9: {
-            // FIXME crashes
-            // Complex comp = get_complex();
+            Complex comp = get_complex();
             title = @"get_complex()";
-            // value = [NSString stringWithFormat:@"(%f,%f)", comp.real, comp.img];
+            value = [NSString stringWithFormat:@"(%f,%f)", comp.real, comp.img];
             break;
         }
             
         case 10: {
-            // FIXME crashes
-            // Complex comp = inc_complex(get_complex());
+            Complex comp = inc_complex(get_complex());
             title = @"inc_complex(get_complex())";
-            // value = [NSString stringWithFormat:@"(%f,%f)", comp.real, comp.img];
+            value = [NSString stringWithFormat:@"(%f,%f)", comp.real, comp.img];
             break;
         }
             
         case 11: {
-            // FIXME crashes
-            // Complex comp = get_complex();
-            // inc_complex_ptr(&comp);
+            Complex comp = get_complex();
+            inc_complex_ptr(&comp);
             title = @"inc_complex_ptr(&comp)";
-            // value = [NSString stringWithFormat:@"(%f,%f)", comp.real, comp.img];
+            value = [NSString stringWithFormat:@"(%f,%f)", comp.real, comp.img];
             break;
         }
     }

@@ -90,8 +90,7 @@ pub extern fn inc_complex(comp: Complex) -> Complex {
 }
 
 #[no_mangle]
-pub extern fn inc_complex_ptr(comp: &mut Complex) -> Complex {
+pub extern fn inc_complex_ptr(comp: &mut Complex) {
     comp.real += 1.0;
     comp.img += 1.0;
-    *comp
 }
