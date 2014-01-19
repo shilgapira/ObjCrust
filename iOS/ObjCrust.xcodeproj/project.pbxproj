@@ -421,7 +421,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Gil/Dev/ObjCrust/Rust,
+					"$(PROJECT_DIR)/../Rust",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -445,7 +445,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Gil/Dev/ObjCrust/Rust,
+					"$(PROJECT_DIR)/../Rust",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
