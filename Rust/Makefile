@@ -1,11 +1,11 @@
 all: libobjcrust.a
 
 bytecodes: objcrust.rs
-	rustc --emit-llvm --target i386-apple-darwin objcrust.rs
+	rustc --emit=bc --target i386-apple-darwin objcrust.rs
 	mv objcrust.bc objcrust-i386.bc
-	rustc --emit-llvm --target armv7-apple-darwin objcrust.rs
+	rustc --emit=bc --target armv7-apple-darwin objcrust.rs
 	mv objcrust.bc objcrust-armv7.bc
-	rustc --emit-llvm --target armv7s-apple-darwin objcrust.rs
+	rustc --emit=bc --target armv7s-apple-darwin objcrust.rs
 	mv objcrust.bc objcrust-armv7s.bc
 
 objects: bytecodes

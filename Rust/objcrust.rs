@@ -1,14 +1,14 @@
-#[crate_type = "lib"];
-#[no_std];
-#[allow(ctypes)];
+#![crate_type = "lib"]
+#![no_std]
+#![allow(ctypes)]
 
 
-struct Pair {
+pub struct Pair {
     foo: uint,
     bar: uint,
 }
 
-struct Complex {
+pub struct Complex {
     real: f64,
     img: f64,
 }
